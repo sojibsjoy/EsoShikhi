@@ -14,7 +14,7 @@ public class EnglishNumberActivity extends AppCompatActivity implements View.OnC
 
 
     private MediaPlayer mplr;
-    private Button prvsBtn,nxtBtn,playBtn;
+    private Button prvsBtn,nxtBtn;
     private TextView engNumView,engNumTextView;
     private int indicator = 0;
     private Typeface typeface;
@@ -35,7 +35,6 @@ public class EnglishNumberActivity extends AppCompatActivity implements View.OnC
 
         prvsBtn.setOnClickListener(this);
         nxtBtn.setOnClickListener(this);
-        playBtn.setOnClickListener(this);
 
     }
 
@@ -48,7 +47,6 @@ public class EnglishNumberActivity extends AppCompatActivity implements View.OnC
     private void initializeAll() {
         prvsBtn = findViewById(R.id.engPrvsBtn);
         nxtBtn = findViewById(R.id.engNxtBtn);
-        playBtn = findViewById(R.id.engPlayBtn);
         engNumView = findViewById(R.id.engNumView);
         engNumTextView = findViewById(R.id.engNumTextView);
         typeface = Typeface.createFromAsset(getAssets(), "font/eng_font.ttf");
@@ -63,11 +61,8 @@ public class EnglishNumberActivity extends AppCompatActivity implements View.OnC
             case R.id.engNxtBtn:
                 onSwipeRight();
                 break;
-            case R.id.engPlayBtn:
-                mplr.start();
         }
     }
-
     private void onSwipeLeft() {
         if(indicator==0)
             Toast.makeText(getApplicationContext(),"This is the first one!",Toast.LENGTH_SHORT).show();
@@ -471,5 +466,11 @@ public class EnglishNumberActivity extends AppCompatActivity implements View.OnC
                     break;
             }
         }
+    }
+    public void engPlayAudio1(View view) {
+        mplr.start();
+    }
+    public void engPlayAudio2(View view) {
+        mplr.start();
     }
 }

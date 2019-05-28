@@ -5,27 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@drawable/number_bg"
     android:orientation="vertical"
     tools:context=".NumberActivity">
 
 
 
     <TextView
+        android:layout_marginTop="130dp"
         android:onClick="englishNum"
         android:layout_marginBottom="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/eng_num_text"
+        android:textStyle="bold"
         android:textSize="30sp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor2"/>
 
     <TextView
         android:onClick="banglaNum"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ban_num_text"
+        android:textStyle="bold"
         android:textSize="30sp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor2"/>
 
 </LinearLayout>

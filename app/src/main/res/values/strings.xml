@@ -2,10 +2,10 @@
     <string name="app_name">এসো শিখি</string>
     <string name="bornomala_text">বর্ণমালা</string>
     <string name="alphabet_text">Alphabet</string>
-    <string name="numbers_text">Numbers</string>
+    <string name="numbers_text">Number</string>
     <string name="soroborno_text">স্বরবর্ণ</string>
     <string name="benjonborno_text">ব্যঞ্জনবর্ণ</string>
-    <string name="eng_num_text">English Numbers</string>
+    <string name="eng_num_text">English Number</string>
     <string name="ban_num_text">বাংলা সংখ্যা</string>
     <string name="eng_num_example">99</string>
     <string name="eng_num_text_example">Ninety Nine</string>

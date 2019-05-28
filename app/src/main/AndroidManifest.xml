@@ -8,8 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".PrivacyPolicyActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:screenOrientation="landscape">
+        <activity android:name=".PrivacyPolicyActivity" />
         <activity android:name=".CompanyActivity" />
         <activity android:name=".BanglaNumberActivity" />
         <activity android:name=".EnglishNumberActivity" />

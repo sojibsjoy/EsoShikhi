@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class BanglaNumberActivity extends AppCompatActivity implements View.OnClickListener {
 
     private MediaPlayer mplr;
-    private Button prvsBtn,nxtBtn,playBtn;
+    private Button prvsBtn,nxtBtn;
     private TextView banNumView,banNumTextView;
     private int indicator = 0;
     private Typeface typeface;
@@ -34,7 +34,6 @@ public class BanglaNumberActivity extends AppCompatActivity implements View.OnCl
 
         prvsBtn.setOnClickListener(this);
         nxtBtn.setOnClickListener(this);
-        playBtn.setOnClickListener(this);
     }
 
     @Override
@@ -46,7 +45,6 @@ public class BanglaNumberActivity extends AppCompatActivity implements View.OnCl
     private void initializeAll() {
         prvsBtn = findViewById(R.id.banPrvsBtn);
         nxtBtn = findViewById(R.id.banNxtBtn);
-        playBtn = findViewById(R.id.banPlayBtn);
         banNumView = findViewById(R.id.banNumView);
         banNumTextView = findViewById(R.id.banNumTextView);
         typeface = Typeface.createFromAsset(getAssets(),"font/ban_font.ttf");
@@ -486,8 +484,12 @@ public class BanglaNumberActivity extends AppCompatActivity implements View.OnCl
                     }
                 }
                 break;
-            case R.id.banPlayBtn:
-                mplr.start();
         }
+    }
+    public void banPlayAudio1(View view) {
+        mplr.start();
+    }
+    public void banPlayAudio2(View view) {
+        mplr.start();
     }
 }
