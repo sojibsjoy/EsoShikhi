@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">এসো শিখি</string>
-    <string name="bornomala_text">বাংলা\\nবর্ণমালা</string>
-    <string name="alphabet_text">ইংরেজি\\nবর্ণমালা</string>
-    <string name="arabic_text">আরবি\\nবর্ণমালা</string>
+    <string name="bornomala_text">বাংলা\nবর্ণমালা</string>
+    <string name="alphabet_text">ইংরেজি\nবর্ণমালা</string>
+    <string name="arabic_text">আরবি\nবর্ণমালা</string>
     <string name="numbers_text">সংখ্যা</string>
     <string name="units_text">একক</string>
     <string name="soroborno_text">স্বরবর্ণ</string>
