@@ -1,21 +1,22 @@
 <resources>
     <string name="app_name">এসো শিখি</string>
-    <string name="bornomala_text">বর্ণমালা</string>
-    <string name="alphabet_text">Alphabet</string>
-    <string name="numbers_text">Number</string>
+    <string name="bornomala_text">বাংলা\\nবর্ণমালা</string>
+    <string name="alphabet_text">ইংরেজি\\nবর্ণমালা</string>
+    <string name="arabic_text">আরবি\\nবর্ণমালা</string>
+    <string name="numbers_text">সংখ্যা</string>
+    <string name="units_text">একক</string>
     <string name="soroborno_text">স্বরবর্ণ</string>
     <string name="benjonborno_text">ব্যঞ্জনবর্ণ</string>
-    <string name="eng_num_text">English Number</string>
+    <string name="eng_num_text">ইংরেজি সংখ্যা</string>
     <string name="ban_num_text">বাংলা সংখ্যা</string>
     <string name="eng_num_example">99</string>
     <string name="eng_num_text_example">Ninety Nine</string>
     <string name="play_btn_text">Play</string>
-    <string name="ic_about_us">About Us</string>
+    <string name="ic_about_us">আমাদের সম্পর্কে</string>
     <string name="ic_privacy_policy">Privacy Policy</string>
-    <string name="ic_exit">Exit</string>
+    <string name="ic_exit">বাহির</string>
 
     <string name="pp_part1">Effective date: February 20, 2019</string>
-    <string name="pp_part2">KP Software Solutions (\"us\", \"we\", or \"our\") operates the https://www.kpsoftwaresolutions.org website and https://play.google.com/store/apps/dev?id=7174269229329822451 the mobile application (the \"Service\").\nWe use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.</string>
     <string name="pp_part3">We collect several different types of information for various purposes to provide and improve our Service to you.</string>
     <string name="pp_part4">While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (\"Personal Data\"). Personally identifiable information may include, but is not limited to:</string>
     <string name="pp_part5">We may also collect information that your browser sends whenever you visit our Service or when you access the Service by or through a mobile device (\"Usage Data\").\nThis Usage Data may include information such as your computer\'s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.\nWhen you access the Service by or through a mobile device, this Usage Data may include information such as the type of mobile device you use, your mobile device unique ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use, unique device identifiers and other diagnostic data.</string>
@@ -29,6 +30,8 @@
     <string name="pp_part13">Our Service does not address anyone under the age of 18 (\"Children\").\nWe do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.</string>
     <string name="pp_part14">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.\nWe will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the \"effective date\" at the top of this Privacy Policy.\nYou are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</string>
     <string name="pp_part15">If you have any questions about this Privacy Policy, please contact us:</string>
+    <string name="language_txt">ভাষা</string>
+    <string name="pp_part2">KP Software Solutions (\"us\", \"we\", or \"our\") operates the https://www.kpsoftwaresolutions.org website and https://play.google.com/store/apps/dev?id=7174269229329822451 the mobile application (the \"Service\"). We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.</string>
 
 
 </resources>
