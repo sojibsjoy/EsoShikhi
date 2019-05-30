@@ -1,5 +1,6 @@
 package org.kpsoftwaresolutions.esoshikhi;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +22,7 @@ public class BanglaNumberActivity extends AppCompatActivity implements View.OnCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bangla_number);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         initializeAll();
 
         banNumView.setTypeface(typeface);

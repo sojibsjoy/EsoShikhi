@@ -1,5 +1,6 @@
 package org.kpsoftwaresolutions.esoshikhi;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,7 @@ public class EnglishNumberActivity extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english_number);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         initializeAll();
 
         engNumView.setTypeface(typeface);

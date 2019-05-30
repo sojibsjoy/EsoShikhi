@@ -10,20 +10,16 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Locale;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     Intent intent;
-    TextView ban,eng;
+    TextView ban,eng,pp,au,ex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,36 +33,18 @@ public class HomeActivity extends AppCompatActivity {
 
         ban = findViewById(R.id.ban);
         eng = findViewById(R.id.eng);
+        pp = findViewById(R.id.privacyPolicy);
+        au = findViewById(R.id.aboutUs);
+        ex = findViewById(R.id.exit);
 
-        ban.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setLocale("bn");
-                recreate();
-                intent = new Intent(HomeActivity.this,MainActivity.class);
-                startActivity(intent);
-
-            }
-        });
-        eng.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setLocale("en");
-                recreate();
-                intent = new Intent(HomeActivity.this,MainActivity.class);
-                startActivity(intent);
-
-            }
-        });
+        ban.setOnClickListener(this);
+        eng.setOnClickListener(this);
+        pp.setOnClickListener(this);
+        au.setOnClickListener(this);
+        ex.setOnClickListener(this);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
 
-        MenuInflater mi = new MenuInflater(getApplicationContext());
-        mi.inflate(R.menu.menu_layout,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 
     @Override
     public void onBackPressed() {
@@ -91,23 +69,6 @@ public class HomeActivity extends AppCompatActivity {
         ald.show();
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.aboutUsItem:
-                intent = new Intent(getApplicationContext(),CompanyActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.privacyPolicyItem:
-                intent = new Intent(getApplicationContext(),PrivacyPolicyActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.exitItem:
-                onBackPressed();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
     public void setLocale(String lang) {
         Locale locale = new Locale(lang);
         Locale.setDefault(locale);
@@ -122,5 +83,34 @@ public class HomeActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
         String language = prefs.getString("My_Lang","");
         setLocale(language);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.ban:
+                setLocale("bn");
+                recreate();
+                intent = new Intent(HomeActivity.this,MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.eng:
+                setLocale("en");
+                recreate();
+                intent = new Intent(HomeActivity.this,MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.privacyPolicy:
+                intent = new Intent(HomeActivity.this,PrivacyPolicyActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.aboutUs:
+                intent = new Intent(HomeActivity.this,CompanyActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.exit:
+                onBackPressed();
+                break;
+        }
     }
 }

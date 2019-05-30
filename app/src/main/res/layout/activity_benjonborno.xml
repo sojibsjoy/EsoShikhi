@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/eng_num_bg"
     android:layout_height="match_parent"
     tools:context=".BenjonbornoActivity">
-
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7">
+        <Button
+            android:id="@+id/benPrvsBtn"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:drawableStart="@drawable/ic_left"
+            android:layout_height="90dp" />
+        <TextView
+            android:onClick="benPlayAudio1"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="120dp"
+            android:id="@+id/benNumView"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/engNumTxtColor"
+            android:textSize="120sp"
+            android:layout_weight="6.0"
+            android:layout_height="270dp" />
+        <Button
+            android:layout_marginStart="130dp"
+            android:id="@+id/benNxtBtn"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:drawableStart="@drawable/ic_right"
+            android:layout_height="90dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:onClick="benPlayAudio2"
+        android:id="@+id/benNumTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/engNumTxtColor"
+        android:paddingBottom="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="40sp"/>
+</LinearLayout>

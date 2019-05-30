@@ -49,41 +49,29 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        MenuInflater mi = new MenuInflater(getApplicationContext());
-        mi.inflate(R.menu.menu_layout_all,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.aboutUsItem:
-                intent = new Intent(getApplicationContext(),CompanyActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.privacyPolicyItem:
-                intent = new Intent(getApplicationContext(),PrivacyPolicyActivity.class);
-                startActivity(intent);
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-
     public void bornomala(View view) {
-        intent = new Intent(getApplicationContext(),BornomalaActivity.class);
+        intent = new Intent(getApplicationContext(),OptionActivity.class);
+        intent.putExtra("key",0);
         startActivity(intent);
     }
     public void alphabet(View view) {
-        intent = new Intent(getApplicationContext(),AlphabetActivity.class);
+        intent = new Intent(getApplicationContext(),OptionActivity.class);
+        intent.putExtra("key",1);
+        startActivity(intent);
+    }
+    public void arabic(View view) {
+        intent = new Intent(getApplicationContext(),OptionActivity.class);
+        intent.putExtra("key",2);
         startActivity(intent);
     }
     public void numbers(View view) {
-        intent = new Intent(getApplicationContext(),NumberActivity.class);
+        intent = new Intent(getApplicationContext(),OptionActivity.class);
+        intent.putExtra("key",3);
         startActivity(intent);
-
+    }
+    public void units(View view) {
+        intent = new Intent(getApplicationContext(),OptionActivity.class);
+        intent.putExtra("key",4);
+        startActivity(intent);
     }
 }

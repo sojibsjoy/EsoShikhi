@@ -10,7 +10,13 @@
         android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreenActivity"
+        <activity android:name=".ConsonantActivity"></activity>
+        <activity android:name=".VowelActivity" />
+        <activity android:name=".UnitsActivity" />
+        <activity android:name=".ArabicActivity" />
+        <activity android:name=".OptionActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

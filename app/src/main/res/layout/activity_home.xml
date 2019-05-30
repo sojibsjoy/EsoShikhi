@@ -32,5 +32,32 @@
             android:textSize="20sp"
             android:textColor="@color/textColor2"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/aboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ic_about_us"
+            android:textSize="20sp"
+            android:textColor="@color/textColor2"/>
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/privacyPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ic_privacy_policy"
+            android:textSize="20sp"
+            android:textColor="@color/textColor2"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/exit"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ic_exit"
+        android:textSize="30sp"
+        android:textColor="@color/textColor" />
 
 </LinearLayout>

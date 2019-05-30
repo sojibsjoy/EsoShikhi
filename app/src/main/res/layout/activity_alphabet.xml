@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/number_bg"
+    android:orientation="vertical"
     tools:context=".AlphabetActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:layout_marginTop="130dp"
+        android:onClick="vowel"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/soroborno_text"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/textColor2"/>
+
+    <TextView
+        android:onClick="consonant"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/benjonborno_text"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/textColor2"/>
+
+</LinearLayout>
