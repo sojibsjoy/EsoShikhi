@@ -1,6 +1,7 @@
 package org.kpsoftwaresolutions.esoshikhi;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Path;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,12 +17,12 @@ public class OptionActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_option);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         shikhi = findViewById(R.id.shikhi);
         practice = findViewById(R.id.practice);
         quiz = findViewById(R.id.quiz);
-        exam = findViewById(R.id.exit);
+        exam = findViewById(R.id.exam);
 
         shikhi.setOnClickListener(this);
         practice.setOnClickListener(this);

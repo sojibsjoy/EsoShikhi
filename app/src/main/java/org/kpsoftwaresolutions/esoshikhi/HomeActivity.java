@@ -28,14 +28,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_home);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getResources().getString(R.string.app_name));
-
         ban = findViewById(R.id.ban);
         eng = findViewById(R.id.eng);
-        pp = findViewById(R.id.privacyPolicy);
-        au = findViewById(R.id.aboutUs);
-        ex = findViewById(R.id.exit);
+        pp = findViewById(R.id.pp);
+        au = findViewById(R.id.au);
+        ex = findViewById(R.id.ex);
 
         ban.setOnClickListener(this);
         eng.setOnClickListener(this);
@@ -100,15 +97,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(HomeActivity.this,MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.privacyPolicy:
+            case R.id.pp:
                 intent = new Intent(HomeActivity.this,PrivacyPolicyActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.aboutUs:
+            case R.id.au:
                 intent = new Intent(HomeActivity.this,CompanyActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.exit:
+            case R.id.ex:
                 onBackPressed();
                 break;
         }
